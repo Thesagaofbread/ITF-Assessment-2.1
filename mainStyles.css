@@ -1,3 +1,7 @@
+/*Apply CSS to ensure a visually appealing and consistent design.
+Include at least 3 different styles for typography (e.g., headings, paragraphs, links).
+Use CSS for layout (e.g., grid, flexbox) and responsive design (e.g., media queries).*/
+
 :root {
 
     --placeholder-colour1: rgb(0, 43, 54);
@@ -32,11 +36,16 @@ body {
 
 }
 
-.Homepage {
+.displaypage {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: var(--placeholder-colour3);
     padding: 5%;
     margin: 5%;
+    
 
 }
+
 
