@@ -10,53 +10,88 @@
     <script defer src = "../mainFunctions.js"></script>
 </head>
 
-<body>
-    <header id = "StickyHeader">
-        <h1> Interior Design Consultancy</h1>
-        <nav>
-            <a href = "../hmtlPages/home.html">
-                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-            </a>
+<body class = "background">
+    
+    <header class = "homePage">
+        <div class = "container">
 
-            <a href = "../hmtlPages/about.html">About</a>
-            <a href = "../hmtlPages/services.html">Services</a>
-            <a href = "../hmtlPages/contact.html">Contact</a>
-            <a href = "../hmtlPages/blog.html">Blog</a>
-            <a href = "../hmtlPages/projects.html">Projects</a>
+            <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
+            <h1 class = "text_mainHeader text_center">Design Consultancy</h1>
 
-        </nav>
+        </div>
     </header>
 
-    <main class = "displaypage">
+    <nav class = "navBar">
+        <div class = "container">
+            <section class = "logo">
+                <a href = "../hmtlPages/home.html">
+                    <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
+                </a>
+                <h1 class = "text_logoHeader"> Interior Design Consultancy</h1>
+            </section>
+            
+            <section class = "menu">
+                <ul>
+                    <li>
+                        <a class = "btn" href = "../hmtlPages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a class = "btn" href = "../hmtlPages/services.html">Services</a>
+                    </li>
+                    <li>
+                        <a class = "btn" href = "../hmtlPages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class = "btn" href = "../hmtlPages/blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class ="btn" href = "../hmtlPages/projects.html">Projects</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
 
-        <h1>About us</h1>
-        <p>Quick information here
-            In a nutshell: Your website explains who you are, where you are, and how you do your business. . Your portfolio showcases the work that will guide clients to understand what you're capable of and get you your next job.
-        </p>
+    <main class = "displayPage">
 
-        <h2> Why choose us?</h2>
-        <p>Portfolio, marketing, etc</p>
+        <section class="displaySection">
 
-        <section class = "displaypage">
+            <h1>About us</h1>
+
+            <p>Quick information here
+                In a nutshell: Your website explains who you are, where you are, and how you do your business. . Your portfolio showcases the work that will guide clients to understand what you're capable of and get you your next job.
+            </p>
+
+        </section>
+        <section class="displaySection">
+
+            <h2> Why choose us?</h2>
+            <p>Portfolio, marketing, etc</p>
+
+        </section>
+        <section class = "displaySection">
 
             <h1>Current projects</h1>
 
             Some examples of your projects here (leads to portfolio)
 
-            <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-            <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-            <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-            <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
+            <div class = "imageGrid">
+                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
+                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
+                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
+                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
+            </div>
+            
 
         </section>
 
-        <section class = "displaypage">
+        <section class = "displaySection">
 
             <p>Design philosophy- How do you work?</p>
 
         </section>
 
-        <section class = "displaypage">
+        <section class = "displaySection">
                 <h1>Order now!</h1>
 
                 Make an order now!
@@ -65,6 +100,20 @@
 
     </main>
 
-    <footer></footer>
+    <footer class = "footer container">
+        <div class = "logo">
+                <a href = "../hmtlPages/home.html">
+                    <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
+                </a>
+                <h1 class = "text_logoHeader"> Interior Design Consultancy</h1>
+        </div>
+        <div class = "contactInfo">
+            <p>Phone number</p>
+            <p>Email address</p>
+            <p>Consultancy address</p>
+            <p>Copyright</p>
+            
+        </div>
+    </footer>
 </body>
 </html>
