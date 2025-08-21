@@ -6,19 +6,16 @@
     <title>HomePage</title>
 
     <link href = "../mainStyles.css" rel = "stylesheet" type = "text/css">
+    <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
     <script defer src = "../mainFunctions.js"></script>
 </head>
 
 <body class = "background">
-    
+
     <header class = "homePage">
-        <div class = "container">
-
-            <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
-            <h1 class = "text_mainHeader text_center">Design Consultancy</h1>
-
-        </div>
+        <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
+        <h1 class = "text_mainHeader text_center">Design Consultancy</h1>
     </header>
 
     <nav class = "navBar">
@@ -36,83 +33,120 @@
                         <a class = "btn" href = "../hmtlPages/about.html">About</a>
                     </li>
                     <li>
-                        <a class = "btn" href = "../hmtlPages/services.html">Services</a>
+                        <a class = "btn dropdown" href = "../hmtlPages/services.html">Services</a>
                     </li>
                     <li>
-                        <a class = "btn" href = "../hmtlPages/contact.html">Contact</a>
+                        <a class ="btn" href = "../hmtlPages/projects.html">Projects</a>
                     </li>
                     <li>
                         <a class = "btn" href = "../hmtlPages/blog.html">Blog</a>
                     </li>
                     <li>
-                        <a class ="btn" href = "../hmtlPages/projects.html">Projects</a>
+                        <a class = "btn" href = "../hmtlPages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class = "contactbtn" href = #>
+                            <i class = "glyphicon glyphicon-envelope"></i>Book a Consultation!
+                        </a>
                     </li>
                 </ul>
             </section>
         </div>
     </nav>
 
-    <main class = "displayPage">
+    <main class = "content">
+        <div class = "container">
+            <section class = "container">
 
-        <section class="displaySection">
+                <h1>About us</h1>
+                <div class = "logo">
+                    <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
 
-            <h1>About us</h1>
+                    <div class="paragraphSection">
+                        <p>Quick information here
+                        In a nutshell: Your website explains who you are, where you are, and how you do your business. . Your portfolio showcases the work that will guide clients to understand what you're capable of and get you your next job.
+                        </p>
+                    </div>
+                </div>
 
-            <p>Quick information here
-                In a nutshell: Your website explains who you are, where you are, and how you do your business. . Your portfolio showcases the work that will guide clients to understand what you're capable of and get you your next job.
-            </p>
+            </section>
+            <section class = "container">
 
-        </section>
-        <section class="displaySection">
+                <h2> Services?</h2>
+                <div class = "paragraphSection projectGrid">
+                   <p> What do you offer? </p>
+                </div>
 
-            <h2> Why choose us?</h2>
-            <p>Portfolio, marketing, etc</p>
+            </section>
+            <section class = "container">
 
-        </section>
-        <section class = "displaySection">
+                <h1>Current projects</h1>
 
-            <h1>Current projects</h1>
+                Some examples of your projects here (leads to portfolio)
 
-            Some examples of your projects here (leads to portfolio)
+                <div class = "projectGrid">
+                    <a href = # class = "project">
+                    </a>
+                    <a href = # class = "project">
+                    </a>
+                    <a href = # class = "project">
+                    </a>
+                    <a href = # class = "project">
+                    </a>
+                  
+                </div>
+                
 
-            <div class = "imageGrid">
-                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-                <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg" width = "100" height = "100">
-            </div>
-            
+            </section>
 
-        </section>
+            <section class = "container">
 
-        <section class = "displaySection">
+                <h1>Design philosophy- How do you work?</h1>
 
-            <p>Design philosophy- How do you work?</p>
+                <div class = "paragraphSection">
+                    <p>Here's your general process</p>
+                </div>
 
-        </section>
+            </section>
 
-        <section class = "displaySection">
+            <section class = "container">
+
                 <h1>Order now!</h1>
+                <div class = "logo">
+                    <div class = "card">
+                        <p>
+                            text
 
-                Make an order now!
+                        </p>
+                    </div>
+                    <form class = "card">
+                        <input type = "text" placeholder = "First name"></input>
+                        <input type = "text" placeholder = "Last name"></input>
+                        <input type = "text" placeholder = "Email Adress"></input>
+                        <input type = "text" placeholder = "Phone number"></input>
+                        <input type = "button" value = "Book!"></input>
+                    </form>
+                </div>
 
-        </section>
-
+            </section>
+        </div>
     </main>
 
-    <footer class = "footer container">
-        <div class = "logo">
-                <a href = "../hmtlPages/home.html">
-                    <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
-                </a>
-                <h1 class = "text_logoHeader"> Interior Design Consultancy</h1>
-        </div>
-        <div class = "contactInfo">
-            <p>Phone number</p>
-            <p>Email address</p>
-            <p>Consultancy address</p>
-            <p>Copyright</p>
-            
+    <footer class = "footer">
+        <div class="container">
+            <div class = "logo">
+                    <a href = "../hmtlPages/home.html">
+                        <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
+                    </a>
+                    <h1 class = "text_logoHeader"> Interior Design Consultancy</h1>
+            </div>
+            <div class = "contactInfo">
+                <p>Phone number</p>
+                <p>Email address</p>
+                <p>Consultancy address</p>
+                <p>Copyright</p>
+
+            </div>
         </div>
     </footer>
 </body>

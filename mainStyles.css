@@ -19,114 +19,88 @@ Use CSS for layout (e.g., grid, flexbox) and responsive design (e.g., media quer
 
 
 }
-/*Flexible to already chosen user background*/
+/* Page Styling eg 'portfolio' or 'product' */
 
-/*User customising*/
-
-/*Device screens*/
 
 /* Placeholder sets for existing tags */
+* {
 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
+}
+img {
+
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+
+}
 /* Background*/
 .background {
 
     background-color: var(--placeholder-colour2);
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
 
 }
-
-/*Home page exclusive content */
-.homePage h1 {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: red;
-
-}
-.homePage img {
-
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-
-}
-
-
+/* Page layout and content */
+/*Section above navbar - except homepage, which displays an image*/
 /* Navbar, sticks to the top*/
 .navBar {
 
     top: 0;
     position: sticky;
+    padding: 5px;
+    background-color: var(--placeholder-colour1);
 
 }
 .navBar .container {
 
-    width: 100%;
-    height: 100px;
+    height: auto;
     display: flex;
-    /*overflow: auto; For my reference currently - remove onece I am sure all alignments work well */
     justify-content: space-between;
     align-items: center;
-    
+    flex-wrap: wrap;
+
 }
 
-        .navBar .logo img{
-
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-
-        }
         .navBar .menu ul{
 
-        padding: 50px;
         display: flex;
         list-style-type: none;
+        align-items: center;
+
 
         }
-        .navBar .menu .btn {
-
-        text-decoration: none;
-        display: inline-block;
-        font-weight: 600;
-        padding: 30px;
-        transition: 0.5;
-        
-        }
-            .navBar .menu .btn:hover {
-            
-            opacity: 0.8;
-            background-color: rgba(80, 139, 172, 0.5);
-            display: inline-block;
-            font-weight: 700;
-            padding: 30px;
-            transition: 0.5;
-            
-            }
 
 
-/*Main page sections */
+
+/*Content section */
+.content .container {
+    
+
+    background-color: var(--placeholder-colour3);
+
+}
 
 
 /* Footer */
 .footer {
 
-    height: 150px;
+    background-color: var(--placeholder-colour1);
+
+}
+.footer .container{
+
     display: flex;
     align-items: center;
     justify-content: space-around;
 
 }
-    .footer .logo img{
 
-            width: 75px;
-            height: 75px;
-            object-fit: cover;
-    }
     .footer .contactInfo {
 
         padding: 50px;
@@ -134,54 +108,146 @@ Use CSS for layout (e.g., grid, flexbox) and responsive design (e.g., media quer
     }
 
 
-/* utility */
 
-.container {
+/*Page exclusive content */
+/*Hompage --display top image*/
+.homePage {
 
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
     background-color: var(--placeholder-colour1);
 
 }
 
-.displayPage {
-    
-    max-width: fit-content;
-    max-height: fit-content;
-    margin: 15px;
-    padding: 15px;
+    .homePage h1 {
 
-    background-color: var(--placeholder-colour3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+
+    }
+    .homePage img {
+
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+
+    }
+
+
+
+
+/*Main page sections */
+
+
+
+/* Section utility */
+/* About/logo, project/blog button, dropdown, gallery, form*/
+.card {
+
+    width: 50%;
+    padding: 100px;
+    background-color: rgb(150, 91, 18);
+
 
 }
 
-.displaySection {
-
-    max-width: 70%;
-    margin: 0 auto;
-    padding: 0 15px;
-
-    background-color: var(--placeholder-colour4);
-
-}
-
-.imageGrid {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
-    background-color: var(--placeholder-colour5);
-
-
-}
 .logo {
 
     display: flex;
-    padding: 50px;
-    align-content: center;
+    align-items: center;
+    gap: 20px;
 
 }
+
+.projectGrid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    gap: 30px;
+
+}
+    .project {
+
+        background: url("https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 150px;
+
+    }
+
+        .project:hover {
+
+            transform: scale(1.1);
+
+        }
+
+
+/* general utility */
+.container {
+
+    max-width: 100%;
+    padding: 25px;
+    margin: 5px;
+
+}
+
+.paragraphSection {
+
+    height: 100px;
+    background: blanchedalmond;
+
+}
+
+
+
+.btn {
+
+    display: inline-block;
+    text-decoration: none;
+    background: cadetblue;
+    font-weight: 600;
+    padding: 25px;
+    margin: 5px;
+    transition: 0.5;
+
+
+}
+
+.contactbtn {
+
+    display: inline-block;
+    background-color: rgb(12, 19, 72);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 25px;
+    margin: 10px;
+    transition: 0.5;
+
+
+}
+
+    .btn:hover {
+
+        display: inline-block;
+        opacity: 0.8;
+        font-weight: 650;
+        padding: 25px;
+        transition: 0.5;
+
+
+    }
+    .contactbtn:hover {
+
+        display: inline-block;
+        background-color: aqua;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 25px;
+        transition: 0.5;
+
+    }
 
 
 /* text utility */
@@ -190,9 +256,10 @@ Use CSS for layout (e.g., grid, flexbox) and responsive design (e.g., media quer
 
     align-self: start;
     font-size: 2rem;
-    line-height: 1.8;
+    line-height: 1.5;
     font-weight: 600;
-    margin: 20px 0 5px;
+    margin: 15px 0 1px;
+    width: 150px;
 
 }
 .text_mainHeader{
@@ -228,6 +295,10 @@ Use CSS for layout (e.g., grid, flexbox) and responsive design (e.g., media quer
     margin: 20px 0 10px;
     background-color: antiquewhite;
 }
+
+
+/* Bg and alignment sets */
+
 .text_center{
 
     text-align: center;
