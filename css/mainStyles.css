@@ -3,24 +3,23 @@ Include at least 3 different styles for typography (e.g., headings, paragraphs, 
 Use CSS for layout (e.g., grid, flexbox) and responsive design (e.g., media queries).*/
 
 /* Root and [attribute selector] variable sets */
-/*main root*/
+/*main root - declare variables*/
 :root {
 
-    --placeholder-colour1: rgb(0, 43, 54);
-    --placeholder-colour2: rgb(255,0,255);
-    --placeholder-colour3: rgb(255,0,0);
-    --placeholder-colour4: rgb(0,0,255);
-    --placeholder-colour5: rgb(255,255,0);
+    --1: #484c57;
+    --2: #877182;
+    --3: #9e9c9e;
+    --4: #eb8d95;
+    --5: #f5beae;
+    --6: #ffeaba;
+    --7: #ffff;
+
+    --font1: ;
+    --font2: ;
+    --font3: ;
+    --font4: ;
 
 }
-/* Hover options */
-[hover = True] {
-
-
-
-}
-/* Page Styling eg 'portfolio' or 'product' */
-
 
 /* Placeholder sets for existing tags */
 * {
@@ -37,20 +36,27 @@ img {
     object-fit: cover;
 
 }
-/* Background*/
+li {
+
+    list-style-type: none;
+
+}
+/* Background or body set*/
 .background {
 
     display: initial;
-    background-color: var(--placeholder-colour2);
+    background-color: var(--7);
     width: 100vw;
     height: 100vh;
 
 }
+
+
 /* Page layout and content */
 .topbar {
 
     margin: 0;
-    background-color: var(--placeholder-colour1);
+    background-color: var(--1);
     height: 250px;
     
 }
@@ -61,7 +67,7 @@ img {
         top: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: red;
+        color: var(--7);
 
     }
     .topbar img {
@@ -78,7 +84,8 @@ img {
 
     top: 0 ;
     position: sticky;
-    background-color: var(--placeholder-colour1);
+    background-color: var(--1);
+    z-index: 1;
 
 }
 .navBar .container {
@@ -104,33 +111,36 @@ img {
 
 
 
+
 /*Content section */
 
 .content .container {
 
     display: block;
     margin: 50px;
-    background-color: var(--placeholder-colour3);
+    background-color: var(--5);
 
 }
 
-.content .container_small{
+        .content .container div, 
+        .content .container p{
 
-    display: inline;
-    transition: opacity 3s ease-in-out;
-    opacity: 1;
+            min-height: 50vh;
+
+        }
+
+.display {
+
+    text-align: center;
+
 
 }
-    .content .container_small.hidden{
 
-        opacity: 0;
-
-    }
 
 /* Footer */
 .footer {
 
-    background-color: var(--placeholder-colour1);
+    background-color: var(--1);
 
 }
 .footer .container{
@@ -149,40 +159,19 @@ img {
 
 
 
-/*Page exclusive content */
-/*Hompage*/
-
-
-
-
-/*Main page sections */
-/* Home */
-
-/* About */
-
-/* Services */
-
-/* Projects */
-
-/* Blog  */
-
-/* Contact */
-
-/* Book */
-
-/* Pages */
-
 
 /* Section utility */
 /* About/logo, project/blog button, dropdown, gallery, form*/
 .card {
 
+    display: grid;
     width: 50%;
     padding: 100px;
-    background-color: rgb(150, 91, 18);
-
+    gap: 10px;
+    background-color: var(--6);
 
 }
+
 
 .logo {
 
@@ -199,21 +188,37 @@ img {
     gap: 25px;
 
 }
-    .project {
+    .project button{
 
         background: url("https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
-        padding: 100px;
+        background-size: cover;
+        padding: 50%;
 
     }
 
+
         .project:hover {
 
-            transform: scale(1.1);
+            scale:1.01;
+            opacity: 50%;
 
         }
 
+    .blog button{
+
+        background: url("https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40%;
+
+    }
+        .blog:hover {
+
+            scale:1.01;
+            opacity: 50%;
+
+        }
 
 
 
@@ -239,20 +244,12 @@ img {
 
 }
 
-.paragraphSection {
-
-    height: 100px;
-    background: blanchedalmond;
-
-}
-
-
 
 .btn {
 
     display: inline-block;
     text-decoration: none;
-    background: cadetblue;
+    background: var(--2);
     font-weight: 600;
     padding: 5px 25px;
     margin: 5px;
@@ -264,7 +261,7 @@ img {
 .contactbtn {
 
     display: inline-block;
-    background-color: rgb(12, 19, 72);
+    background-color: var(--5);
     text-decoration: none;
     font-weight: 600;
     padding: 10px 30px;
@@ -277,6 +274,7 @@ img {
     .btn:hover {
 
         display: inline-block;
+        background-color: var(--3);
         opacity: 0.8;
         font-weight: 650;
         padding: 10px 25px;
@@ -289,7 +287,7 @@ img {
     .contactbtn:hover {
 
         display: inline-block;
-        background-color: aqua;
+        background-color: var(--6);
         text-decoration: none;
         font-weight: 600;
         padding: 10px 30px;
@@ -326,7 +324,6 @@ img {
     line-height: 1.4;
     font-weight: normal;
     margin: 40px 0 20px;
-    background-color: antiquewhite;
 
 }
 .text_minorHeader{
@@ -335,7 +332,6 @@ img {
     line-height: 1.4;
     font-weight: normal;
     margin: 30px 0 20px;
-    background-color: antiquewhite;
 }
 .text_sectionText{
 
@@ -343,7 +339,6 @@ img {
     line-height: 1.4;
     font-weight: normal;
     margin: 20px 0 10px;
-    background-color: antiquewhite;
 }
 
 

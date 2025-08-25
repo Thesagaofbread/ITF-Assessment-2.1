@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link href = "../css/mainStyles.css" rel = "stylesheet" type = "text/css">
+    <link href = "../css/attributes.css" rel = "stylesheet" type = "text/css">
+    <link href = "../css/responsiveStyles.css" rel = "stylesheet" type = "text/css">
+
+    
+    <script defer src = "../js/mainFunctions.js"></script>
+    
+</head>
+<body class = "background">
+
+    <nav class = "navBar">
+        <div class = "container">
+            <section class = "logo">
+                <a href = "../home.html" onclick="changePage(homepage)">
+                    <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
+                </a>
+                <h1 class = "text_logoHeader"> Interior Design Consultancy</h1>
+            </section>
+            
+            <section class = "menu">
+                <!--Use javascript to change the displays add dropdown to applicable-->
+                <ul>
+                    <li>
+                        <a class = "btn" onclick="changePage(aboutPage)" href = "./about.html">About</a>
+                    </li>
+                    <li>
+                        <a class = "btn" onclick="changePage(servicesPage)" href = "./services.html">Services</a>
+                    </li>
+                    <li>
+                        <a class ="btn" onclick="changePage(projectsPage)" href = "./projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class = "btn" onclick="changePage(blogPage)" href = "./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class = "btn" onclick="changePage(contactPage)" href = "">Contact</a>
+                    </li>
+                    <li>
+                        <a class = "contactbtn" onclick="changePage(book)" href = "./book.html">
+                            <!--Add an icon here-->
+                            Book a Consultation!
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+
+     <!--Contact content-->
+    <main class="content">
+        <section id = "contactPage" class = "display">
+            <div class = "container">
+                <h1>Contact</h1>
+                <div class = "logo" style = "background-image: url(https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg)">
+                    <div class = "card" style = "background-color: transparent;">
+
+                    </div>
+
+                    <form class = "card">
+                        <input type = "text" placeholder = "First name"></input>
+                        <input type = "text" placeholder = "Last name"></input>
+                        <input type = "text" placeholder = "Email Adress"></input>
+                        <input type = "text" placeholder = "Phone number"></input>
+                        <input type = "button" value = "Book!"></input>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
