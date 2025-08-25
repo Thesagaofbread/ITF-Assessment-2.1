@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel = "canonical" content = "https://InteriorDesignPrototype.com.au/">
+    <meta property = "og:title" content = "Interior Design Consultancy">
+    <meta property = "og:url" content = "https://InteriorDesignPrototype.com.au/">
 
-    <link href = "../mainStyles.css" rel = "stylesheet" type = "text/css">
+    <link href = "./css/mainStyles.css" rel = "stylesheet" type = "text/css">
+    <link href = "./css/attributes.css" rel = "stylesheet" type = "text/css">
+    <link href = "./css/responsiveStyles.css" rel = "stylesheet" type = "text/css">
 
     
-    <script defer src = "../mainFunctions.js"></script>
+    <script defer src = "./js/mainFunctions.js"></script>
+    
+    
 </head>
 
 <body class = "background">
@@ -23,32 +30,34 @@
     <nav class = "navBar">
         <div class = "container">
             <section class = "logo">
-                <a href = "../hmtlPages/home.html">
+                <a href = "./home.html" onclick="changePage(homepage)">
                     <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
                 </a>
                 <h1 class = "text_logoHeader"> Interior Design Consultancy</h1>
             </section>
             
             <section class = "menu">
+                <!--Use javascript to change the displays add dropdown to applicable-->
                 <ul>
                     <li>
-                        <a class = "btn" href = "../hmtlPages/about.html">About</a>
+                        <a class = "btn" onclick="changePage(aboutPage)" href = "./outside html pages/about.html">About</a>
                     </li>
                     <li>
-                        <a class = "btn dropdown" href = "../hmtlPages/services.html">Services</a>
+                        <a class = "btn" onclick="changePage(servicesPage)" href = "./outside html pages/services.html">Services</a>
                     </li>
                     <li>
-                        <a class ="btn" href = "../hmtlPages/projects.html">Projects</a>
+                        <a class ="btn" onclick="changePage(projectsPage)" href = "./outside html pages/projects.html">Projects</a>
                     </li>
                     <li>
-                        <a class = "btn" href = "../hmtlPages/blog.html">Blog</a>
+                        <a class = "btn" onclick="changePage(blogPage)" href = "./outside html pages/blog.html">Blog</a>
                     </li>
                     <li>
-                        <a class = "btn" href = "../hmtlPages/contact.html">Contact</a>
+                        <a class = "btn" onclick="changePage(contactPage)" href = "./outside html pages/contact.html">Contact</a>
                     </li>
                     <li>
-                        <a class = "contactbtn" href = #>
-                            <i class = "glyphicon glyphicon-envelope"></i>Book a Consultation!
+                        <a class = "contactbtn" onclick="changePage(book)" href = "./outside html pages/book.html">
+                            <!--Add an icon here-->
+                            Book a Consultation!
                         </a>
                     </li>
                 </ul>
@@ -56,72 +65,79 @@
         </div>
     </nav>
 
-    <!--Conetent display-->
+    <!--Content display-->
     <main class = "content">
-        <div class = "container">
-            <section class = "container_small">
+            
+        <!--Homepage content-->
+        <section id = "homepage" class = "display">
+            <span class = "container">
 
                 <h1>About us</h1>
                 <div class = "logo">
                     <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
 
-                    <div class="paragraphSection">
-                        <p>Quick information here
+                    <div>
+                        <article>Quick information here
                         In a nutshell: Your website explains who you are, where you are, and how you do your business. . Your portfolio showcases the work that will guide clients to understand what you're capable of and get you your next job.
-                        </p>
+                        </article>
                     </div>
                 </div>
 
-            </section>
-            <section class = "container_small">
+            </span>
+            <span class = "container">
 
-                <h2> Services?</h2>
-                <div class = "paragraphSection projectGrid">
-                   <p> What do you offer? </p>
-                </div>
-
-            </section>
-            <section class = "container_small">
-
-                <h1>Current projects</h1>
-
-                Some examples of your projects here (leads to portfolio)
-
+                <h2> We do: </h2>
                 <div class = "projectGrid">
-                    <a href = # class = "project">
-                    </a>
-                    <a href = # class = "project">
-                    </a>
-                    <a href = # class = "project">
-                    </a>
-                    <a href = # class = "project">
-                    </a>
-                  
-                </div>
-                
-
-            </section>
-
-            <section class = "container_small">
-
-                <h1>Design philosophy- How do you work?</h1>
-
-                <div class = "paragraphSection">
-                    <p>Here's your general process</p>
+                    <article> Residential </article>
+                    <!--Dropdowns for areas here-->
+                    <article> Events </article>
+                    <!--ditto-->
                 </div>
 
-            </section>
+            </span>
+            <span class = "container">
 
-            <section class = "container_small">
+                <h1>How we create!</h1>
+                <article>Here's your general process</article>
+
+            </span>
+            <span class = "container">
+
+                <h1>Previous Projects</h1>
+
+                <ul class = "projectGrid">
+
+                    <li class = "project">
+                        <button onclick="portfolioItems(1)">
+                        </button>
+                    </li>
+                    <li class = "project">
+                        <button onclick="portfolioItems(2)">
+                        </button>
+                    </li>
+                    <li class = "project">
+                        <button onclick="portfolioItems(3)">
+                        </button>
+                    </li>
+                    <li class = "project">
+                        <button onclick="portfolioItems(4)">
+                        </button>
+                    </li>
+                </ul>
+
+                    
+
+            </span>
+
+            <span class = "container" >
 
                 <h1>Order now!</h1>
-                <div class = "logo">
-                    <div class = "card">
-                        <p>
-                            text
 
-                        </p>
+                <div class = "logo" style = "background-image: url(https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg)">
+                    <div class = "card" style = "background-color: transparent;">
+
                     </div>
+
                     <form class = "card">
                         <input type = "text" placeholder = "First name"></input>
                         <input type = "text" placeholder = "Last name"></input>
@@ -131,24 +147,29 @@
                     </form>
                 </div>
 
-            </section>
-        </div>
+            </span>
+        </section>
     </main>
+       
+    
 
     <!--Footer display-->
     <footer class = "footer">
         <div class="container">
             <div class = "logo">
-                    <a href = "../hmtlPages/home.html">
+                    <a href = "home.html" onclick="changePage(homepage)">
                         <img src = "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1-p-1600.jpg">
                     </a>
                     <h1 class = "text_logoHeader"> Interior Design Consultancy</h1>
             </div>
             <div class = "contactInfo">
+            <!--Add as links-->
                 <p>Phone number</p>
                 <p>Email address</p>
                 <p>Consultancy address</p>
                 <p>Copyright</p>
+                <!--Add icons-->
+                <p>Socials</p>
 
             </div>
         </div>
